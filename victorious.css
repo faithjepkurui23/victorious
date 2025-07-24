@@ -1,0 +1,137 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    background-color:lightskyblue;
+    color: black;
+    line-height: 1.6;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:beige;
+    padding: 15px 20px;
+
+}
+.navbar .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav-links li{
+
+
+}
+
+.navbar .nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+
+}
+.navbar .nav-links a:hover{
+    color: darkblue;
+}
+
+.navbar .nav-links a.active{
+    color: darkred;
+}
+.navbar .nav-links a.active:hover{
+    color: darkred;
+}
+
+.hamburger{
+    display: none;
+    cursor:pointer;
+}
+
+/*about us section*/
+.about {
+    padding: 40px 20px;
+    background-color: lightcyan;
+    color: #333;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    height: auto;
+    margin:0 20px 20px 0;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+}
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.about::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* make page use full height so footer stays at bottom*/
+/* Make page use full height so footer stays at bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content grows and pushes footer down */
+main, section {
+  flex: 1;
+}
+
+/* Footer styling */
+.site-footer {
+  background: black;          /* black background */
+  color: white;               /* white text */
+  padding: 15px;
+  display: flex;              /* place text and icons in a row */
+  justify-content: space-between; /* space between text and icons */
+  align-items: center;        /* vertically center items */
+  flex-wrap: wrap;            /* wrap on small screens */
+}
+
+/* Social icons */
+.footer-icons a {
+  color: white;               /* default color */
+  text-decoration: none;
+  font-size: 22px;            /* size of icons */
+  margin-left: 15px;          /* space between icons */
+}
+
+.footer-icons a:hover {
+  color: yellow;              /* hover effect */
+}
